@@ -1,0 +1,50 @@
+{
+  "name": "uploadbusboy",
+  "version": "1.0.0",
+  "main": "dist/uploadBusboy.js",
+  "files": [
+    "dist/uploadBusboy.js"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/*.{js,ts,tsx} --quiet --fix",
+    "lint:fix": "xo --fix",
+    "watch": "parcel src/uploadBusboy.ts --target node",
+    "build": "parcel build src/uploadBusboy.ts --target node --detailed-report",
+    "dev": "npm-run-all --parallel watch test:watch lint:fix"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/mz": "^2.7.0",
+    "@types/supertest": "^2.0.8",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "apollo-server-express": "^2.12.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-xo-typescript": "^0.27.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "express": "^4.17.1",
+    "jest": "^25.4.0",
+    "mz": "^2.7.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "2.0.5",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.3.0",
+    "tslint-xo": "^0.16.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/busboy": "^0.2.3",
+    "busboy": "^0.3.1"
+  }
+}
