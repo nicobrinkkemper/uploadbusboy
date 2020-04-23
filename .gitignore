@@ -1,5 +1,6 @@
 # vscode history plugin
 .history
+.cache
 functions/.secret
 .secret
 **/.secret
